@@ -1,0 +1,100 @@
+html {
+	width: 100vw;
+	height: 100vh;
+	font-size: 10px;
+}
+
+body {
+	width: inherit;
+	height: inherit;
+	overflow-x: hidden;
+}
+
+.TODO-box {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	height: 75%;
+	border-radius: 1rem;
+	background: none;
+	border: solid 1px black;
+	align-items: center;
+}
+
+.TODO-doing {
+	//background-color: red;
+}
+
+.TODO-done {
+	//background-color: green;
+
+}
+
+
+.TODO-container {
+	display: flex;
+	flex-direction: row;
+	height: inherit;
+	width: inherit;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.TODO-form {
+	display: flex;
+	flex-direction: row;
+	width: inherit;
+	justify-content: center;
+	height: 10rem;
+	align-items: center;
+}
+
+.TODO-form-input {
+	margin: 0 1rem;
+	height: 5rem;
+	outline: none;
+	background: none;
+	border-radius: 1rem;
+	box-shadow 0 0 3px black;
+}
+
+.TODO-form-submit {
+	width: 10rem;
+	margin: 0 1rem;
+	height: 5rem;
+	outline: none;
+	border: none;
+	border-radius: 2rem;
+	background: none;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	box-shadow: 0 0 3px black;
+}
+
+.TODO-form-submit:hover {
+	background-color: black;
+	color: white;
+}
+
+.TODO-list {
+	font-size: 1.5rem;
+	width: 80%;
+	margin: 0 10%;
+	flex-direction: column;
+	height: inherit;
+	overflow-y: scroll;
+}
+
+.TODO-li {
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: #FFFDD0; 
+	min-height: 3rem;
+	max-height: fit-content;
+	cursor: pointer;
+	margin: 1rem 0;
+}
+
