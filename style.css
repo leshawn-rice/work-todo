@@ -1,100 +1,79 @@
-html {
-	width: 100vw;
-	height: 100vh;
-	font-size: 10px;
-}
-
 body {
-	width: inherit;
-	height: inherit;
-	overflow-x: hidden;
+  font-size: 62.5%;
+  background-color: darkslategray;
+  text-align: center;
 }
 
-.TODO-box {
-	display: flex;
-	flex-direction: column;
-	width: 25%;
-	height: 75%;
-	border-radius: 1rem;
-	background: none;
-	border: solid 1px black;
-	align-items: center;
+header h1 {
+  font-size: 2.4rem;
+  color: lightgray;
 }
 
-.TODO-doing {
-	//background-color: red;
-}
-
-.TODO-done {
-	//background-color: green;
+section#content {
+  border-radius: 1rem;
+  background-color: thistle;
+  margin: 2vh 10vw;
+  height: 80vh;
+  overflow: auto;
 
 }
 
+form#add-items {
+  float: left;
+  width: 8rem;
+  margin: 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
 
-.TODO-container {
-	display: flex;
-	flex-direction: row;
-	height: inherit;
-	width: inherit;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+ul#todo-list {
+  padding: 0 25vw;
+  margin-left: 1rem;
 }
 
 
-.TODO-form {
-	display: flex;
-	flex-direction: row;
-	width: inherit;
-	justify-content: center;
-	height: 10rem;
-	align-items: center;
+ul#todo-list li{
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  background-color: darkslategray;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  border-radius: 0.5rem;
+  margin: 1rem;
 }
 
-.TODO-form-input {
-	margin: 0 1rem;
-	height: 5rem;
-	outline: none;
-	background: none;
-	border-radius: 1rem;
-	box-shadow 0 0 3px black;
+ul#todo-list li button {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+  box-shadow: 0 0 3px white;
+  position: absolute;
+  margin: 0.5rem;
+  border-radius: 1rem;
 }
 
-.TODO-form-submit {
-	width: 10rem;
-	margin: 0 1rem;
-	height: 5rem;
-	outline: none;
-	border: none;
-	border-radius: 2rem;
-	background: none;
-	background-color: white;
-	color: black;
-	cursor: pointer;
-	box-shadow: 0 0 3px black;
+ul#todo-list li button.removed {
+  right: 0;
+  top: 0;
+  color: red;
 }
 
-.TODO-form-submit:hover {
-	background-color: black;
-	color: white;
+ul#todo-list li button.completed {
+  left: 0;
+  top: 0;
+  color: lightblue;
 }
 
-.TODO-list {
-	font-size: 1.5rem;
-	width: 80%;
-	margin: 0 10%;
-	flex-direction: column;
-	height: inherit;
-	overflow-y: scroll;
+ul#todo-list li:hover button {
+  display: inline;
 }
 
-.TODO-li {
-	border-radius: 1rem;
-	padding: 1rem;
-	background-color: #FFFDD0; 
-	min-height: 3rem;
-	max-height: fit-content;
-	cursor: pointer;
-	margin: 1rem 0;
+li.completed-item {
+  text-decoration: line-through;
 }
-

@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<title>Todo</title>
-		<meta description="Personal Todo list for work" />
-		<link rel="stylesheet" href="style.css" />
-	</head>
 
-	<body>
-		<div class="TODO-container">
-			<form class="TODO-form">
-				<input class="TODO-form-input" type="text" name="todo" required />
-				<button class="TODO-form-submit">Add Todo</button>
-			</form>
-			<div class="TODO-none TODO-box">
-				<h1>Need to do</h1>
-				<div class="TODO-list" ondrop="drop(event)" ondragover="allowDrop(event)">
-					<div class="TODO-li" draggable="true" ondragstart="drag(event)">
-						This is an example todo for something that I will want to do
-					</div>
-				</div>
-			</div>
-
-			<div class="TODO-doing TODO-box">
-				<h1>Doing</h1>
-				<div class="TODO-list" ondrop="drop(event)" ondragover="allowDrop(event)">
-				</div>
-			</div>
-
-			<div class="TODO-done TODO-box">
-				<h1>Done</h1>
-				<div class="TODO-list">
-				</div>
-			</div>
-		</div>
-		<script src="app.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+    
+  <body>
+    <header>
+      <h1>Uplevel Systems Tasks</h1>
+    </header>
+    <section id="content">
+      <form id="add-items">
+        <label for="todo-item">Add an item!</label>
+        <input type="text" name="todo-item" id="todo-item">
+        <input type="submit" value="Add to list">
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </section>
+    
+    <script type="text/javascript" src="app.js"></script>
+  </body>
 </html>
